@@ -1,0 +1,87 @@
+.site-header{
+    background-image: url(./Images/Natasha\ &\ Ernie\ -\ Digital\ -\ Andi\ Artigue\ Photography-84.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.site-header #name{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 10rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#main-nav{
+    display: none;
+    background-color:#eee;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.nav-buttons{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: white;
+    color: blue;
+    border-color: #eee;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 1rem;
+}
+
+#main-nav .nav-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+#main-nav .nav-list a{
+    text-decoration: none;
+    color: red;
+}
+
+#main-nav .nav-list a:focus,
+#main-nav .nav-list a:hover{
+    color: green;
+}
+
+.section {
+    padding: 100px 50px;
+}
+
+.project{
+    border: 1px solid black;
+}
+
+.columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+.columns .project{
+    flex: 1 0 50%;
+}
+
+/* This is for an element with the class section and the class red.*/
+.section.red{
+
+}
+
+/* For an element with the class red that is a child for the class section*/ */
+.section .red{
+
+}
