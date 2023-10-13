@@ -1,4 +1,10 @@
 @import url("./header.css");
+@import url("./about.css");
+@import url("./work.css");
+
+*{ /*added*/
+    font-family: sans-serif;
+}
 
 .section {
     padding: 100px 50px;
@@ -15,7 +21,7 @@
     }
 
 .columns .project{
-    flex: 1 0 50%;
+    flex: 1 0 calc(50% - 1rem);
 }
 
 /* This is for an element with the class section and the class red.
