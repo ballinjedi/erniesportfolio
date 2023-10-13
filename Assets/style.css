@@ -1,8 +1,10 @@
 @import url("./header.css");
 @import url("./about.css");
 @import url("./work.css");
+@import url("./contact.css");
 
-*{ /*added*/
+body {
+    /*added*/
     font-family: sans-serif;
 }
 
@@ -10,18 +12,14 @@
     padding: 100px 50px;
 }
 
-.project{
+.project {
     border: 1px solid black;
 }
 
-.columns {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-.columns .project{
-    flex: 1 0 calc(50% - 1rem);
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* This is for an element with the class section and the class red.

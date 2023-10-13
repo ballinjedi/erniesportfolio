@@ -6,7 +6,7 @@
     <!--enter metadata-->
     <link rel="stylesheet" href="./Assets/normalize.css">
     <link rel="stylesheet" href="./Assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
                 <ul class="nav-list">
                     <li> <!--Remove blue links in links-->
                         <a href="#about">About Me</a>
-                    </li>            
+                    </li>
                     <li>
                         <a href="#work">Work</a>
                     </li>
@@ -39,57 +39,90 @@
             </nav>
         </div>
 
-        
 
-        
+
+
     </header>
-
     <main>
         <section id="about" class="section red">
-            <h2>About Me</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda molestiae repellat distinctio suscipit expedita nostrum dolorum. Illum rem labore accusamus facere, iusto aspernatur expedita tempora. Repudiandae inventore odio voluptates.
-            </p>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, assumenda molestiae repellat
+                    distinctio
+                    suscipit expedita nostrum dolorum. Illum rem labore accusamus facere, iusto aspernatur expedita
+                    tempora.
+                    Repudiandae inventore odio voluptates.
+                </p>
+            </div>
         </section>
         <section id="work" class="section">
-            <h2>Work</h2>
-            <article class="project first">
-                <img src="https://picsum.photos/1600/400" alt="Placeholder image">
+            <div class="container">
+                <h2>Work</h2>
+                <article class="project first">
+                    <img src="https://picsum.photos/1600/400" alt="Placeholder image">
                     <div class="wrapper">
-                    <h3>
-                        <a href="https://google.com" target="_blank">Project Title</a>
-                    </h3>
-                    <p>This is the project description.</p>
+                        <h3>
+                            <a href="https://google.com" target="_blank">Project Title</a>
+                        </h3>
+                        <p>This is the project description.</p>
+                    </div>
+                </article>
+                <div class="columns">
+                    <article class="project">
+                        <img src="https://picsum.photos/800/300" alt="Placeholder image">
+                        <div class="wrapper">
+                            <h3>
+                                <a href="https://google.com" target="_blank">Second Project</a>
+                            </h3>
+                            <p>This is the project description.</p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <img src="https://picsum.photos/800/300" alt="Placeholder image">
+                        <div class="wrapper">
+                            <h3>
+                                <a href="https://google.com" target="_blank">Third Project</a>
+                            </h3>
+                            <p>This is the project description.</p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <div class="columns">
-                <article class="project">
-                    <img src="https://picsum.photos/800/300" alt="Placeholder image">
-                    <div class="wrapper">
-                        <h3>
-                            <a href="https://google.com" target="_blank">Second Project</a>
-                        </h3>
-                        <p>This is the project description.</p>
-                    </div>
-                </article>
-                <article class="project">
-                    <img src="https://picsum.photos/800/300" alt="Placeholder image">
-                    <div class="wrapper">
-                        <h3>
-                            <a href="https://google.com" target="_blank">Third Project</a>
-                        </h3>
-                        <p>This is the project description.</p>
-                    </div>
-                </article>
             </div>
         </section>
         <section id="contact" class="section">
-            <h2>Contact Me</h2>
+            <div class="container">
+                <h2>Contact Me</h2>
+                <div class="columns">
+                    <div>
+                        <p>Phone: <a href="tel:1234562222">123-456-2222</a><br>Email: <a
+                                href="mailto:123@example.com">123@example.com</a></p>
+                    </div>
+                    <div>
+                        <form action="https://formspree.io/f/xoqoylqk" method="POST">
+                            <p>
+                                <label for="email">Email
+                                </label>
+                                <input id="email" type="email" name="email" required placeholder="my@email.com">
+                            </p>
+                            <p>
+                                <label for="message">Message
+                                </label>
+                                <textarea id="message" name="message" rows="5" required
+                                    placeholder="Write a message."></textarea>
+                            </p>
+                            <!-- your other form fields go here -->
+                            <button class="rounded" type="submit">Send</button>
+                            <button class="outlined rounded" type="reset">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="resume" class="section">
-            <h2>Resume</h2>
+
         </section>
     </main>
-<script src="./Assets/script.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
 
 

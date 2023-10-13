@@ -1,39 +1,32 @@
-h2{ /*added*/
+h2 {
+    /*added*/
     color: white;
     text-align: center;
     text-transform: uppercase;
 }
 
-#work{
+#work {
     background-color: #0472c0;
 }
 
-#work .project{
+#work .project {
     background-color: white;
     box-shadow: 1rem 1rem 1rem black;
-    margin: 1rem; 
+    margin-bottom: 1rem;
     border-radius: .5rem;
     overflow: hidden;
     position: relative;
 }
 
-#work .project.first{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#work .project .wrapper{
-    margin: 1rem;
-}
-
-#work a{ /*added*/
+#work a {
+    /*added*/
     text-decoration: none;
     color: black;
     display: flex;
     justify-content: center;
 }
 
-#work .project a::after{
+#work .project a::after {
     content: "";
     z-index: 1;
     position: absolute;
@@ -41,4 +34,29 @@ h2{ /*added*/
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media (min-width: 992px) {
+    #work .columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #work .columns .project {
+        flex: 1 0 calc(50% - 1rem);
+    }
+
+    #work .project {
+        margin: 1rem;
+    }
+
+    #work .project.first {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #work .project .wrapper {
+        margin: 1rem;
+    }
 }
