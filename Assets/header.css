@@ -1,5 +1,5 @@
 .site-header {
-    background-image: url(./Images/Natasha\ &\ Ernie\ -\ Digital\ -\ Andi\ Artigue\ Photography-84.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@
     bottom: 0;
     text-align: center;
     color: white;
-    /*mix-blend-mode: difference; removed to add gradient to show white text*/
+    /*mix-blend-mode: difference; removed to add gradient to show white header name*/
     /*added*/
     font-size: 9rem;
     margin-bottom: 0;
