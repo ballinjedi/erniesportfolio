@@ -19,6 +19,15 @@
     resize: vertical;
 }
 
+#contact .columns p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#contact .columns a {
+    color: white;
+}
+
 #contact button {
     display: inline-block;
     padding: .5rem 1rem;
