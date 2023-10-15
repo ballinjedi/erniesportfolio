@@ -1,17 +1,21 @@
-#about{
-    background-color: #0472c0;
+#about {
+    background-color: #0c2c50;
     font-size: 1.5rem;
     text-align: center;
     color: white;
 }
 
-#about h2{
+/* D.R.Y.!
+    #about h2 {
     text-transform: uppercase;
-}
+    font-family: 'Rubik', sans-serif;
 
-#about p{
+} */
+
+#about p {
     max-width: 600px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Roboto Mono', monospace;
 }

@@ -1,12 +1,10 @@
-h2 {
-    /*added*/
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
+#work {
+    background-color: #0c2c50;
 }
 
-#work {
-    background-color: #0472c0;
+#work h2 {
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
 }
 
 #work .project {
@@ -16,6 +14,11 @@ h2 {
     border-radius: .5rem;
     overflow: hidden;
     position: relative;
+}
+
+/* Added font family to p tags in work section */
+#work .project p {
+    font-family: 'Roboto Mono', monospace;
 }
 
 #work a {
@@ -58,5 +61,13 @@ h2 {
 
     #work .project .wrapper {
         margin: 1rem;
+    }
+}
+
+@media (max-width:992px) {
+
+    /*added to eliminate issue of image being positioned to the left when on mobile*/
+    #work .project.other img {
+        width: 100%;
     }
 }

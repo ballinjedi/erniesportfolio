@@ -1,41 +1,52 @@
-.site-header{
+.site-header {
     background-image: url(./Images/Natasha\ &\ Ernie\ -\ Digital\ -\ Andi\ Artigue\ Photography-84.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
+    background-image:
+        /*added to make white header text readable*/
+        linear-gradient(rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, .4)),
+        url(./Images/Natasha\ &\ Ernie\ -\ Digital\ -\ Andi\ Artigue\ Photography-84.jpg);
 }
 
-.site-header #name{
-    position:absolute;
+
+.site-header #name {
+    position: absolute;
     width: 100%;
     bottom: 0;
     text-align: center;
     color: white;
-    mix-blend-mode: difference; /*added*/
-    font-size: 10rem;
+    /*mix-blend-mode: difference; removed to add gradient to show white text*/
+    /*added*/
+    font-size: 9rem;
     margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    /*added*/
 }
 
-#main-nav{
+#main-nav {
     display: none;
-    background-color:transparent; /*changed from white*/
+    /*changed from white*/
+    background-color: transparent;
     height: 100vh;
     width: 100vw;
     z-index: 1;
-    position: relative;
+    /*changed from relative to absolute*/
+    position: absolute;
 }
 
-#main-nav.show{
+#main-nav.show {
     display: block;
 }
 
-.nav-buttons{
+.nav-buttons {
     padding: 1rem;
     font-size: 1.5rem;
     background-color: white;
-    color: #0472c0;
+    color: #0c2c50;
     border-color: white;
     position: absolute;
     top: 1rem;
@@ -48,19 +59,23 @@
     list-style-type: none;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    font-family: sans-serif;
+    /*changed from 100vh to not spread out list items when clicking nav button*/
+    height: 50vh;
+    /*added*/
+    font-family: 'Roboto Mono', monospace;
+    /*added to increase size of list items and more emphasis*/
     font-size: 2rem;
-    font-weight: bold; /*added*/
+    font-weight: bold;
+
 }
 
-#main-nav .nav-list li{
+#main-nav .nav-list li {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-#main-nav .nav-list a{
+#main-nav .nav-list a {
     text-decoration: none;
     color: white;
     flex: 1 0 100%;
@@ -70,7 +85,7 @@
 }
 
 #main-nav .nav-list a:focus,
-#main-nav .nav-list a:hover{
+#main-nav .nav-list a:hover {
     color: black;
 }
 
@@ -81,20 +96,23 @@
 }
 
 @media (min-width: 992px) {
-    #open-button, 
+
+    #open-button,
     #close-button {
         display: none;
     }
+
     #main-nav {
         display: block;
         background-color: transparent;
     }
-    #main-nav .nav-list{
+
+    #main-nav .nav-list {
         flex-direction: row;
         font-size: 1rem;
         height: auto;
         padding: 1rem;
         margin: 0;
-        
+
     }
 }
