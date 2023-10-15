@@ -1,0 +1,12 @@
+footer {
+    background-color: #0c2c50;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    padding: 1px;
+    font-family: 'Roboto Mono', monospace;
+
+}
