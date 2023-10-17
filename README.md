@@ -1,12 +1,13 @@
 Notes:
-Javascript file for working button actions and smooth scrolling done in assistance with tutor.
+
+Javascript file for working button actions and smooth scrolling done in assistance with tutor which were then put into a transpiler. 
 
 Normalize.css was a file added by recommendation.
 
 Font sources were acquired from google fonts https://fonts.google.com/
 Stock images in work section were acquired from https://picsum.photos/
 
-Contact Me Section built by using Formspree.
+Contact Me section built by using Formspree.
 
 NEED TO FIX:
 
